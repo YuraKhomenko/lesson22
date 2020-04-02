@@ -1,4 +1,4 @@
-/*let yellow = '<img src="iphoneyellow.jpg" alt="" width="500px" height="700px"> ';
+/*
 let price = 0;
 while(true) { 
 let memory = prompt("How much memory do you want in phone?");
@@ -34,7 +34,7 @@ let img3 = "iphonegreen.jpg";
      continue;
    }
    console.log(arr[i]);
- }*/
+ }
  price = 0;
  let memory;
  
@@ -59,4 +59,17 @@ while (memory === null || !+memory || memory !== 64 || memory !== 128 || memory 
        }
       
        alert("Price is " + price + "$");
- 
+ */
+       let man = {
+        name: "Bob",
+        surname: "Brown",
+        email: "bobik90@icloud.com"
+    }
+   
+   // Перебор значений свойств в обьекте - man
+   memory = prompt("How much memory do you want in phone?");
+    for (let item in man) { 
+      if(memory)        // создание той переменной, которая будет перебирать свойства в объекте man
+        document.write(man[item]);  //выводим на екран переменную которая перебирала свойство
+    }
+   
